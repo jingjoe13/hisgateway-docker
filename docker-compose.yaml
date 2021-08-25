@@ -6,20 +6,20 @@ services:
     ports:
       - 8083:8083
     environment:
-      - GROUP_ID=xxxxx_x
-      - CONFIG_STORAGE_TOPIC=xxxxx_hisgateway_connect_configs
-      - OFFSET_STORAGE_TOPIC=xxxxx_hisgateway_connect_offsets
-      - STATUS_STORAGE_TOPIC=xxxxx_hisgateway_connect_statuses
-      - CONNECT_SSL_TRUSTSTORE_LOCATION=/var/private/ssl/kafka.client.xxxxx.truststore.jks
-      - CONNECT_PRODUCER_SSL_TRUSTSTORE_LOCATION=/var/private/ssl/kafka.client.xxxxx.truststore.jks
-      - CONNECT_SSL_KEYSTORE_LOCATION=/var/private/ssl/kafka.client.xxxxx.keystore.jks
-      - CONNECT_PRODUCER_SSL_KEYSTORE_LOCATION=/var/private/ssl/kafka.client.xxxxx.keystore.jks
-      - CONNECT_PRODUCER_SSL_TRUSTSTORE_PASSWORD=PPPPP
-      - CONNECT_PRODUCER_SSL_KEYSTORE_PASSWORD=PPPPP
-      - CONNECT_SSL_TRUSTSTORE_PASSWORD=PPPPP
-      - CONNECT_SSL_KEYSTORE_PASSWORD=PPPPP
-      - CONNECT_SSL_KEY_PASSWORD=PPPPP
-      - CONNECT_PRODUCER_SSL_KEY_PASSWORD=PPPPP
+      - GROUP_ID=28786_1
+      - CONFIG_STORAGE_TOPIC=28786_hisgateway_connect_configs
+      - OFFSET_STORAGE_TOPIC=28786_hisgateway_connect_offsets
+      - STATUS_STORAGE_TOPIC=28786_hisgateway_connect_statuses
+      - CONNECT_SSL_TRUSTSTORE_LOCATION=/var/private/ssl/kafka.client.28786.truststore.jks
+      - CONNECT_PRODUCER_SSL_TRUSTSTORE_LOCATION=/var/private/ssl/kafka.client.28786.truststore.jks
+      - CONNECT_SSL_KEYSTORE_LOCATION=/var/private/ssl/kafka.client.28786.keystore.jks
+      - CONNECT_PRODUCER_SSL_KEYSTORE_LOCATION=/var/private/ssl/kafka.client.28786.keystore.jks
+      - CONNECT_PRODUCER_SSL_TRUSTSTORE_PASSWORD=WQBo4xWTMJaMGVg7Ye1g
+      - CONNECT_PRODUCER_SSL_KEYSTORE_PASSWORD=WQBo4xWTMJaMGVg7Ye1g
+      - CONNECT_SSL_TRUSTSTORE_PASSWORD=WQBo4xWTMJaMGVg7Ye1g
+      - CONNECT_SSL_KEYSTORE_PASSWORD=WQBo4xWTMJaMGVg7Ye1g
+      - CONNECT_SSL_KEY_PASSWORD=WQBo4xWTMJaMGVg7Ye1g
+      - CONNECT_PRODUCER_SSL_KEY_PASSWORD=WQBo4xWTMJaMGVg7Ye1g
       - BOOTSTRAP_SERVERS=broker1.gateway.moph.go.th:9093,broker2.gateway.moph.go.th:9093,broker3.gateway.moph.go.th:9093
       - CONNECT_PRODUCER_BOOTSTRAP_SERVERS=broker1.gateway.moph.go.th:9093,broker2.gateway.moph.go.th:9093,broker3.gateway.moph.go.th:9093
       - CONNECT_SECURITY_PROTOCOL=SSL
@@ -59,7 +59,7 @@ services:
     restart: always
     container_name: hisgateway-mqtt
     environment: 
-      - HOSPCODE=xxxxx
+      - HOSPCODE=28786
     pid: "host"
     networks:
       gw-network:
